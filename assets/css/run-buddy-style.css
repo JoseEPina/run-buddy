@@ -207,11 +207,15 @@ section {
    margin: 50px auto;
    padding-bottom: 50px;
    width: 80%;
-   border-bottom: 1px solid #39a6b2;
+   border-bottom: 1px solid #39a6b2; /* Now we are adding State Based Positing */
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
+}
+
+.step:last-child {
+   border-bottom: none;
 }
 
 .step-img {
@@ -349,7 +353,9 @@ section {
 
 .contact-form input,
 .contact-form textarea {
+   /* add a transparent background here */
    background-color: rgba(255, 255, 255, 0.75);
+   /*  */
    border: 1px solid #024e76;
    display: block;
    padding: 7px 15px;
@@ -361,6 +367,7 @@ section {
    border-radius: 15px;
 }
 
+/* Create a new css rule for focus state */
 .contact-form input:focus,
 .contact-form textarea:focus {
    background-color: rgba(255, 255, 255, 1);
